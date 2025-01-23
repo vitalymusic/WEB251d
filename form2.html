@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Форма регистрации автомобилей</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .registration-form {
+      background: #ffffff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      width: 400px;
+    }
+    .registration-form h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .form-group {
+      margin-bottom: 15px;
+    }
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    .form-group input,
+    .form-group select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+    .form-group button {
+      width: 100%;
+      padding: 10px;
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .form-group button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <form class="registration-form">
+    <h2>Регистрация автомобиля</h2>
+    <div class="form-group">
+      <label for="owner-name">ФИО владельца</label>
+      <input type="text" id="owner-name" name="owner-name" placeholder="Введите ФИО" required>
+    </div>
+    <div class="form-group">
+      <label for="phone">Телефон</label>
+      <input type="tel" id="phone" name="phone" placeholder="Введите номер телефона" required>
+    </div>
+    <div class="form-group">
+      <label for="email">Электронная почта</label>
+      <input type="email" id="email" name="email" placeholder="Введите email" required>
+    </div>
+    <div class="form-group">
+      <label for="car-make">Марка автомобиля</label>
+      <select id="car-make" name="car-make" required>
+        <option value="" disabled selected>Выберите марку</option>
+        <option value="toyota">Toyota</option>
+        <option value="honda">Honda</option>
+        <option value="bmw">BMW</option>
+        <option value="mercedes">Mercedes</option>
+        <option value="audi">Audi</option>
+        <option value="ford">Ford</option>
+        <option value="chevrolet">Chevrolet</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="car-model">Модель автомобиля</label>
+      <input type="text" id="car-model" name="car-model" placeholder="Введите модель" required>
+    </div>
+    <div class="form-group">
+      <label for="registration-number">Госномер</label>
+      <input type="text" id="registration-number" name="registration-number" placeholder="Введите госномер" required>
+    </div>
+    <div class="form-group">
+      <label for="year">Год выпуска</label>
+      <input type="number" id="year" name="year" placeholder="Введите год выпуска" min="1900" max="2025" required>
+    </div>
+    <div class="form-group">
+      <button type="submit">Зарегистрировать</button>
+    </div>
+  </form>
+</body>
+</html>
