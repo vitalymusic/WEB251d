@@ -1,0 +1,58 @@
+/* Selectors */
+
+h1{
+    color:red;
+    text-align: center;
+}
+h2{
+    color:green;
+    text-align: center;
+}
+div{
+    background-color: cornflowerblue;
+}
+header{
+    background-color: antiquewhite;
+}
+footer{
+    background-color: black;
+
+}
+
+div.multimedia{
+    border: 2px solid red;
+}
+
+#name{
+    background-color: rgb(4, 124, 229);
+     color:white;   
+}
+
+nav{
+    background-color: black;
+    height: 50px;
+}
+nav a{
+    color:white;  
+}
+
+nav a[href="./index.html"]{
+    color:red;
+}
+
+img {
+    width:150px;
+}
+
+img:not([width="300"]){
+    width:155px !important; 
+}
+
+
+.html img{
+    
+}
+
+.index img{
+
+}

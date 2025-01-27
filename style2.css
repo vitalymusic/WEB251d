@@ -1,0 +1,71 @@
+body{
+    background-color: aliceblue;
+}
+
+
+header{
+    height: 100px;
+    height: auto;
+    background-color: aquamarine;
+    margin:50px;
+    margin: 30px 50px;
+    /* margin: 10px 20px 30px 40px; */
+    margin-top:60px;
+
+    box-sizing: content-box;
+    box-sizing: border-box;
+    border: 3px solid forestgreen;
+    border-width: 5px;
+    border-style: double;
+    border-color: brown;
+    border-radius: 50%;
+    border-radius: 10px;
+    border-top-color:transparent;
+
+
+    /* Padding */
+
+    padding:30px;
+
+}
+
+
+nav{
+    height: 50px;
+    outline:3px solid;
+}
+main{
+    padding:20px;
+}
+
+section{
+    height: 450px;
+    width: 75%;
+    margin: 20px auto;
+    border-radius: 5px;
+    color:white;
+    padding: 10px;
+}
+
+/* https://coolors.co/ */
+#sec1{
+    background-color: #384D48;
+}
+#sec2{
+    background-color: #6E7271;
+    /* Flexbox */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center
+}
+
+#sec2 .card{
+    height: 100%;
+    width: 30%;
+    background-color: white;
+}
+
+#sec3{
+    background-color: #ACAD94;
+}
