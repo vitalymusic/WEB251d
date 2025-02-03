@@ -1,5 +1,7 @@
 body{
     background-color: aliceblue;
+    margin:0px;
+    padding: 0px;
 }
 
 
@@ -69,3 +71,102 @@ section{
 #sec3{
     background-color: #ACAD94;
 }
+
+
+
+/* Positioning */
+
+
+#sec1 h1{
+    position: relative;
+    top:30px;
+    left:100px;
+    font-size: 45pt;
+    z-index: 10;
+    /* right:100px;
+    bottom:60px */
+}
+#sec1 h2{
+    position: relative;
+    left:140px;
+    top:-40px;
+    z-index: 10;
+}
+#sec1 .logo{
+    width: 300px;
+    position: relative;
+    left: 186px;
+    top: -200px;
+    z-index: 0;
+}
+
+button.pressMe{
+    background-color: rgb(248, 94, 94);
+    padding: 10px;
+    color:white;
+    position: absolute;
+    top:100px;
+    right:10rem;
+    z-index: 1000;
+}
+
+.chat{
+    padding:10px 20px;
+    background-color: aliceblue;
+    /* border: 2px solid; */
+    border-radius: 5px;
+    position: fixed;
+    right:20px;
+    bottom:40px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.344);
+
+}
+.chat h3{
+    text-align: center;
+    margin-top:0px;
+}
+.chat textarea{
+    width: 100%;
+    height:100px;
+    resize: none;
+}
+.chat button{
+    width: 100%;
+}
+
+nav{
+    background-color: #384D48;
+    position: sticky;
+    top:0px;
+    z-index: 1000;
+    outline:none;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.344);
+}
+
+nav a{
+    color:white;
+
+}
+
+.subnav{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 150px;
+    background-color: #384D48;
+    position: relative;
+    top:50px;
+    padding: 10px 20px;
+    display: none;
+}
+nav .subnavMenu{
+    width:100px;
+    cursor: pointer;
+}
+
+nav .subnavMenu:hover .subnav{
+    display: flex !important;
+}
+
