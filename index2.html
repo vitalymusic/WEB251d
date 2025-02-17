@@ -3,29 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    
+  <!-- icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- icons -->
+
+
     <link rel="stylesheet" href="style2.css">
     <title>Document</title>
 </head>
 <body>
    
     <header>
-        <h1>Header</h1>
+        <h1> Header</h1>
     </header>
     <nav>
         <div class="subnavMenu">  
-        <a href="" class="nav">Nav item</a>  
+        <a href="" class="nav">Nav item <i class="fa-solid fa-circle-chevron-down"></i></a>  
             <div class="subnav">
-                <a href="">Subnav</a>
-                <a href="">Subnav</a>
-                <a href="">Subnav</a>
-                <a href="">Subnav</a>
-                <a href="">Subnav</a>
+                <a href=""><i class="fa-solid fa-caret-right"></i> Subnav</a>
+                <a href=""><i class="fa-solid fa-caret-right"></i> Subnav</a>
+                <a href=""><i class="fa-solid fa-caret-right"></i> Subnav</a>
+                <a href=""><i class="fa-solid fa-caret-right"></i> Subnav</a>
+                <a href=""><i class="fa-solid fa-caret-right"></i> Subnav</a>
             </div>
         </div>  
     </nav>
     <main>
         <section id="sec1">
-            <h1>Test</h1>
+            <h1 class="animate__animated animate__bounceInLeft animate__delay-2s">Animated header</h1>
             <h2>Test of heading 2</h2>
             <img src="https://images.vexels.com/media/users/3/299955/isolated/preview/d2d1394b8b28cdee40116c98e5d3da82-the-vintage-logo.png" alt="" class="logo">
         </section>
@@ -34,14 +44,31 @@
             <div class="card"></div>
             <div class="card"></div>
         </section>
-        <section id="sec3"></section>
+        <section id="sec3">
+            <img src="https://fakeimg.pl/300x400/eb1515/909090?font=noto-serif" alt="">
+            <img src="https://fakeimg.pl/300x400/eb1515/909090?font=noto-serif" alt="">
+            <img src="https://fakeimg.pl/300x400/eb1515/909090?font=noto-serif" alt="">
+            <img src="https://fakeimg.pl/300x400/eb1515/909090?font=noto-serif" alt="">
+            <img src="https://fakeimg.pl/300x400/eb1515/909090?font=noto-serif" alt="">
+
+        </section>
     </main>
 
 
-    <footer></footer>
+    <footer>
+        <form action="">
+            <input type="text" name="name" id="" placeholder="Your name">
+            <input type="email" name="email" id="" placeholder="Your email">
+            <textarea name="message" id="" placeholder="Type your message"></textarea>
+            <button type="submit">
+                <i class="fa-regular fa-envelope"></i> Отправить
+            </button>
+        </form>
+
+    </footer>
 
 
-    <button class="pressMe">Press me</button>  
+    <button class="pressMe"><i class="fa-solid fa-bars"></i> Press me</button>  
     <div class="chat">
         <h3>Chat window</h3>
         <textarea name="" id=""></textarea>
