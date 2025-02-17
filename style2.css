@@ -156,6 +156,9 @@ nav{
     z-index: 1000;
     outline:none;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.344);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 nav a{
@@ -171,13 +174,16 @@ nav a{
     flex-direction: column;
     width: 150px;
     background-color: #384D48;
-    position: relative;
+    position: absolute;
     top:50px;
+    right:10px;
     padding: 10px 20px;
     display: none;
 }
 nav .subnavMenu{
+    align-self:flex-start;
     width:100px;
+    height:100px;
     cursor: pointer;
 }
 
@@ -289,7 +295,7 @@ footer{
 
 
 footer form{
-    width: 400px;
+    max-width: 400px;
     margin:0px auto;
     display: flex;
     flex-direction: column;
@@ -460,6 +466,103 @@ footer button:hover{
     }
   }
   
-
+  .menuBtn{
+    display: none;
+  }
 
   /* Icons */
+
+
+
+
+  /* Mobile CSS */
+
+
+  @media screen and (max-width:950px){
+
+
+   :root{
+            font-size: 10pt;
+        }
+    body{
+        background-color: #ACAD94;
+        background-image: none;
+    }
+
+    header h1{
+        font-size: 2.5rem;
+    }
+
+    button.pressMe{
+        right:5rem;
+    }
+
+
+    #sec1 .logo {
+        left:0px;
+        width: 187px;
+        top:-30px;
+
+    }
+    #sec1 h1{
+        font-size: 2rem;
+        left: 0px;
+    }
+
+
+    #sec1 h2 {
+        left:3rem;
+        top:10px;
+        font-size: 1.5rem;
+    }
+
+    #sec2{
+        flex-direction: column;
+        gap:10px;
+       
+    }
+
+    #sec2 .card{
+        width: 80%;
+    }
+
+    #sec3{
+    }
+
+    #sec3 img{
+        width: 150px;
+    }
+
+
+    .menuBtn{
+        display: block;
+        position: absolute;
+        right:10px;
+        top:10px;
+        z-index:35;
+        background-image: var(--main_gradient);
+        color:white;
+        border:none;
+
+    }
+
+    nav{
+        top:-300px;
+        position: absolute;
+        width: 100%;
+        flex-direction: column;
+        height: auto;
+        gap: 10px;
+        padding: 10px 0px;
+        z-index:30;
+    }
+
+    .nav_active{
+        top:0px;
+        transition: .3s linear;
+    }
+
+
+
+
+  }
