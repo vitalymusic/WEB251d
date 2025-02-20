@@ -6,13 +6,13 @@ html(lang="en")
         title Document
         link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css", integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg==", crossorigin="anonymous", referrerpolicy="no-referrer")
     body
-        include include/_nav.pug
+        include include/nav.pug
         .container
             h1.text-center Hello world!
             p Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores odit eos voluptatem aut, atque quos molestiae ducimus quasi, veritatis numquam eius quia quis sit temporibus modi blanditiis adipisci non dolor?
             img(src="") 
 
-            include include/_user_card.pug
+            include include/user_card.pug
             .d-flex.justify-content-between
                 +users("Andrey","https://www.iconpacks.net/icons/2/free-user-icon-3296-thumb.png")
                 +users("Alex","https://www.iconpacks.net/icons/2/free-user-icon-3296-thumb.png")
@@ -22,5 +22,5 @@ html(lang="en")
         .row.mt-5 
             .col-4 
             .col-4
-                include include/_form.pug 
+                include include/form.pug 
             .col-4 
