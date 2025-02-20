@@ -1,0 +1,22 @@
+form(action="")
+    .mb-3
+        label.form-label(for="exampleFormControlInput1") Email address
+        input.form-control#exampleFormControlInput1(type="email", placeholder="name@example.com",required)
+    .mb-3
+        label.form-label(for="exampleFormControlTextarea1") Example textarea
+        textarea.form-control#exampleFormControlTextarea1(rows="3")
+    .mb-3.d-flex.column-gap-3
+        select.form-select(aria-label="Default select example")
+            option(selected) Select date
+            - var n = 1;
+            while n <= 30
+                option(value=n)= n++
+        select.form-select(aria-label="Default select example")
+            option(selected) Select month
+            - var months = ["January","February","March","April"];
+            each val in months 
+                option(value=val)= val  
+
+
+    .mb-3    
+        input.btn.btn-success(type="submit", value="Save")
